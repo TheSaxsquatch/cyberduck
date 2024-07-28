@@ -80,10 +80,10 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <argLine />
+        <argLine/>
         <jna-version>5.14.0</jna-version>
         <jersey-version>2.38</jersey-version>
-        <jackson-version>2.14.2</jackson-version>
+        <jackson-version>2.17.1</jackson-version>
         <slf4j-version>1.7.36</slf4j-version>
         <log4j-version>2.23.1</log4j-version>
         <bouncycastle-version>1.78.1</bouncycastle-version>
@@ -486,12 +486,12 @@
                             </goals>
                             <configuration>
                                 <target>
-                                    <property name="home" value="${main.basedir}" />
-                                    <property name="version" value="${project.version}" />
-                                    <property name="revision" value="${git.commitsCount}" />
-                                    <property name="hash" value="${git.revision}" />
-                                    <property name="sparkle.feed" value="${sparkle.feed}" />
-                                    <ant antfile="${project.basedir}/build.xml" target="build" dir="." />
+                                    <property name="home" value="${main.basedir}"/>
+                                    <property name="version" value="${project.version}"/>
+                                    <property name="revision" value="${git.commitsCount}"/>
+                                    <property name="hash" value="${git.revision}"/>
+                                    <property name="sparkle.feed" value="${sparkle.feed}"/>
+                                    <ant antfile="${project.basedir}/build.xml" target="build" dir="."/>
                                 </target>
                             </configuration>
                         </execution>
